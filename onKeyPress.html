@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onKeyPress</title>
+    <script>
+        function press(){
+            if(event.keyCode == 13){
+                document.getElementById("show").innerText=document.getElementById("in").value;
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="text" name="content" id = "in"onkeypress=press()>
+<div id = "show"></div>
+</body>
+</html>
